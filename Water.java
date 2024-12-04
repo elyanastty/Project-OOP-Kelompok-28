@@ -3,16 +3,7 @@ package Field;
 import java.util.Random;
 import java.util.Vector;
 
-/**
- * class Water
- * merupakan child dari Field, class ini adalah class yg bergerak
- * dan memiliki antara water sendiri jika nilai vector di indeks
- * tersebut false, atau log jika nilai vector di indeks tersebut true
- */
 public class Water extends Field {
-    /**
-     * Konstruktor
-     */
     public Water(){
 		super();
         item = new Vector<>(fieldSize);
@@ -22,10 +13,6 @@ public class Water extends Field {
         this.generateRandom();
 	}
 
-    /**
-     * Method generateRandom
-     * Set vector of boolean di indeks random dengan true (berarti ada Log)
-     */
     public void generateRandom(){
         Random random = new Random();
         int numOfTrees = random.nextInt(fieldSize/2) + 2;
