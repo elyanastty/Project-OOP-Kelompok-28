@@ -2,16 +2,7 @@ package Field;
 
 import java.util.Random;
 
-/**
- * class Ground
- * merupakan child dari Field, class ini adalah class yg tidak bergerak
- * dan memiliki antara ground sendiri jika nilai vector di indeks
- * tersebut false, atau tree jika nilai vector di indeks tersebut true
- */
 public class Ground extends Field{
-    /**
-     * Konstruktor
-     */
     public Ground(){
 		super();
         for(int i=0; i<fieldSize; i++){
@@ -20,10 +11,6 @@ public class Ground extends Field{
         this.generateRandom();
 	}
 
-    /**
-     * Konstruktor
-     * @param G Ground lain
-     */
     public Ground(final Ground G){
         super();
         for(int i=0; i<G.fieldSize; i++){
@@ -31,10 +18,6 @@ public class Ground extends Field{
         }
     }
 
-    /**
-     * Method generateRandom
-     * Set vector of boolean di indeks random dengan true (berarti ada Tree)
-     */
     public void generateRandom(){
         Random random = new Random();
         int numOfItems = random.nextInt(fieldSize/2) + 1;
