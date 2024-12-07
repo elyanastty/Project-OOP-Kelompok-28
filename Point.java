@@ -11,9 +11,7 @@ public class Point {
 		y = 0;
 	}
 
-	
-	  
-	 
+
 	public Point(int _x, int _y){
 		x = _x;
 		y = _y;
