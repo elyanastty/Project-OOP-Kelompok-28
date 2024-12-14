@@ -198,7 +198,7 @@ public class Main {
 
             JPanel entryPanel = new JPanel();
             entryPanel.setLayout(new BorderLayout());
-            entryPanel.setBackground(i % 2 == 0 ? new Color(240, 248, 255) : new Color(240, 248, 255));
+            entryPanel.setBackground(i % 2 == 0 ? new Color(210, 180, 140) : new Color(222, 184, 135));
             entryPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
             JLabel trophyLabel = new JLabel();
