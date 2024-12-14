@@ -231,7 +231,7 @@ public class Main {
 
                 @Override
                 public void mouseExited(MouseEvent e) {
-                    entryPanel.setBackground(i % 2 == 0 ? new Color(240, 248, 255) : new Color(240, 248, 255));
+                    entryPanel.setBackground(i % 2 == 0 ? new Color(210, 180, 140) : new Color(222, 184, 135));
                 }
             });
 
